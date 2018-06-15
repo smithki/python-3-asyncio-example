@@ -10,5 +10,5 @@ This could also be implemented using the popular [Requests](http://docs.python-r
 ## Running the example
 
 1. Open a terminal to the working directory
-2. `python3 server.py`
-3. `python3 client.py`
+2. Run `python3 server.py`
+3. Run `python3 client.py`
