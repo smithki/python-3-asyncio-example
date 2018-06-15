@@ -12,13 +12,6 @@ def prompt_for_throttle():
     throttle = input("How many requests should be sent per second, concurrently?\n")
     q.put(int(throttle))
 
-# async def send_requests():
-#   while True:
-#     if not q.empty():
-#       req_per_sec = q.get()
-#     await asyncio.sleep(1 / req_per_sec)
-#     ws.send("hello world".encode("utf8"))
-
 async def send_requests():
   req_per_sec = 0
 

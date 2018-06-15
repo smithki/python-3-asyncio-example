@@ -64,6 +64,7 @@ async def start_server():
     await asyncio.sleep(0)
     handle_request(connection)
 
+# Execute async functions
 asyncio.ensure_future(count_requests())
 asyncio.ensure_future(start_server())
 
